@@ -1,0 +1,19 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="project2.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" >
+  <App class="app" id="appl">
+    <Page id="page" title="application page" titleAlignment="Center" showNavButton="true" navButtonPress="onNavButtonPressPage3">
+        <content>
+        <VBox id="vBoxView3">
+           <Text text="FirstName:" id="firstNameText"></Text>
+           <Text text="LastName:" id="lastNameText"></Text>
+           <Text text="Field:" id="fieldNameText"></Text>
+           <Text text="Email:" id="emailText"></Text>
+           <Text text="Password:" id="passwordText"></Text>
+           <Text text="MobileNumber:" id="mobileNumberText"></Text>
+            </VBox>
+
+        </content>
+     </Page>
+   </App>
+</mvc:View>

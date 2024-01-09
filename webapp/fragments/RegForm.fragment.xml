@@ -1,0 +1,75 @@
+<core:FragmentDefinition xmlns:tnt="sap.tnt" xmlns:macros="sap.fe.macros" xmlns:form="sap.ui.layout.form" xmlns="sap.m" 
+ xmlns:core="sap.ui.core" >
+ 
+
+<Dialog id="regDailog" >
+<customHeader>
+			<Toolbar id="customHeader1">
+				<ToolbarSpacer id="toolBar1"/>
+				<Title text="Registration Form" level="H2" id="registrationTittle" />
+				<ToolbarSpacer id="toolBar2"/>
+				<Button id="cancelIcon" icon="sap-icon://sys-cancel" type="Reject" press="closeButton" ariaLabelledBy="cancelButtonLabel"/>
+			</Toolbar>
+
+		</customHeader>
+
+
+				<form:SimpleForm id="registrationForm"  >
+				<form:content>
+
+				<Label id="fn" labelFor="fname" text="FirstName" ></Label>
+				<Input id="fname" type="Text" width="95%" required="true" maxLength="10"
+				valueState="Information"
+				valueStateText="Name must not be empty. Maximum 10 characters."
+				value="{firstname}"
+				liveChange="handleLiveChange"/>
+
+				<Label labelFor="lastName" text="LastName" id="lname"></Label>
+				<Input id="lastName" valueState="Information"
+				valueStateText="Maximum 10 characters" width="95%"
+				value="{lastname}"
+				liveChange="handleLiveChange"></Input>
+
+				<Label id="fl" labelFor="field"  text="FieldName"></Label>
+				<Input id="field" type="Text" width="95%" required="true" maxLength="20" 
+				valueState="Information"
+				valueStateText="Maximum 20 characters"
+				value="{field}"
+				liveChange="handleLiveChange"/>
+
+				<Label id="em"  labelFor="email" text="Email"></Label>
+				<Input id="email" type="Email" width="95%" required="true" 
+				valueState="Information"
+				valueStateText="E-mail must be a valid email address Like,abc123@gmail.com"
+				value="{emailid}"
+				liveChange="handleLiveChange"/>
+
+				<Label id="pass"  labelFor="password" text="Password"></Label>
+				<Input id="password" type="Password" width="95%" required="true" maxLength="10" 
+				valueState="Information"
+				valueStateText="10 digit's only"
+				value="{password}"
+				liveChange="handleLiveChange"/>
+
+				<Label id="phnnum" labelFor="phn" text="Mobile No"></Label>
+				<Input id="phn" type="Tel" width="95%" required="true" maxLength="10" 
+				valueState="Information"
+				valueStateText="10 digit's only"
+				value="{phoneNumber}"
+				liveChange="handleLiveChange"/>
+
+				<!-- <Button id="sub"  text="Submit" type="Accept"  press="registerSubmitButton"></Button>
+				<Button id="cancel" text="Cancel" type="Reject" press="closeButton"></Button> -->
+
+				</form:content>
+
+				</form:SimpleForm>
+				<footer>
+				<Toolbar id="toolBar">
+				<Button id="sub"  text="Submit" type="Accept"  press="registerSubmitButton" enabled="false"></Button>
+				<Button id="RefreshButton" text="Refresh" type="Reject" press="RefreshButton"></Button>
+				</Toolbar>
+				</footer>
+				</Dialog>
+
+				</core:FragmentDefinition>

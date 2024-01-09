@@ -1,0 +1,19 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="project2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" >
+    <App class="app" id="appl">
+    <Page id="page" title="application page" titleAlignment="Center">
+    
+        <content>
+        <GenericTile id="reg" class="regi tileLayout" press="OnPress"
+		frameType="OneByHalf" header="Register You'r Self"/>
+
+        <GenericTile id="login" class="log tileLayout" header="Login You'r Self" press="OnLogPress"
+		frameType="OneByHalf" />
+        <!-- <Button id="reg" class="regi" text="Register You'r Self" type="Attention" press="OnPress"></Button>
+         <Button id="login"  class="log" text="Login You'r Self" type="Attention" press="OnLogPress"></Button> -->
+        </content>
+       
+    </Page>
+   </App>
+</mvc:View>

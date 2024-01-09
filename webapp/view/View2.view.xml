@@ -1,0 +1,87 @@
+<mvc:View xmlns:table="sap.ui.table" xmlns:form="sap.ui.layout.form" controllerName="project2.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" 
+    class="myView">
+    
+    <Page id="page" title="Table Data" titleAlignment="Center" showNavButton="true" navButtonPress="onNavButtonPressPage2">
+        <content>
+        
+            <Table id="table" items="{ 
+                  path:'/',
+                  sorter : {
+                  path : 'field' ,
+                  group : true
+         }
+        
+
+         
+             }"
+            
+             mode="Delete" delete="onDeleteItem"  itemPress="onTableItemPress" >
+            <headerToolbar>
+            <Toolbar id="addToolBar">
+            <ToolbarSpacer id="addToolBarSpacer">
+            </ToolbarSpacer>
+            <SearchField id="searchField" width="470px"  showSearchButton="true" liveChange="onFilterPosts"/>
+
+            <Button id="add" text="ADD_MORE" width="20%" icon="sap-icon://add-activity"   type="Attention" press="OnPress"></Button>
+            </Toolbar>
+            
+            </headerToolbar>
+                <columns>
+                  <!-- <Column id="allcheck">
+                  <CheckBox id="parentCheckBox" select="onSelectAll" selected="{/selectAll}"></CheckBox>
+                   
+                  </Column> -->
+                  <Column id="fnheader">
+                        <Text text="FirstName" id="fnId"></Text>
+                  </Column>
+                  <Column id="lnheader">
+                        <Text text="LastName" id="lnId"></Text>
+                  </Column>
+                  <Column id="fieldheader" >
+                        <Text text="Field" id="fieldId" ></Text>
+                  </Column>
+                  <Column id="emailheader">
+                        <Text text="Email" id="emId"></Text>
+                  </Column>
+                  <Column id="passheader">
+                        <Text text="Password" id="passId"></Text>
+                  </Column>
+                  <Column id="phnheader">
+                         <Text text="PhoneNumber" id="phnId"></Text>   
+                  </Column>
+                  <Column id="action1" >
+                        <Text text="Action's" id="updateAction" textAlign="End"></Text>
+                  </Column>
+                  <!-- <Column id="action2" >
+                        <Text text="DeleteAction" id="deleteAction"></Text>
+                  </Column> -->
+                  
+                </columns>
+                <items>
+                <ColumnListItem id="cells" type="Navigation" >
+                  <cells>
+                        <!-- <CheckBox id="checkBox" selected="{selected}" /> -->
+                        <Text text="{firstname}" id="cell2"/>
+                        <Text text="{lastname}" id="cell3"/>
+                        <Text text="{field}" id="cell4"  />
+                        <Text text="{emailid}" id="cell5"/>
+                        <Text text="{password}" id="cell6"/>
+                        <Text text="{phoneNumber}" id="cell7"/>
+                        
+                        <Button id="upButton"  press="onUpdateButtonPress" icon="sap-icon://edit" ></Button>
+                       
+                        <!-- <HBox justifyContent="End" id="cellHbox">
+                              <Button id="upButton" text="Update" press="updateButton"></Button>
+                              <Button id="delButton" text="Delete" press="deleteButton"></Button>
+                        </HBox>  -->
+
+                  </cells>
+                </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+   
+</mvc:View>

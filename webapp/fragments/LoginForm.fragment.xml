@@ -1,0 +1,35 @@
+<core:FragmentDefinition xmlns:macros="sap.fe.macros" xmlns:form="sap.ui.layout.form" xmlns="sap.m"  xmlns:tnt="sap.tnt"
+xmlns:core="sap.ui.core" id="project2" >
+<Dialog id="Dialoglogin"  >
+<customHeader>
+			<Toolbar id="customHeader2">
+				<ToolbarSpacer id="toolBar2"/>
+				<Title text="Login Form" level="H2" id="loginTittle" />
+				<ToolbarSpacer id="toolBar3"/>
+				<Button id="cancelIcon" icon="sap-icon://sys-cancel" type="Reject" press="loginClose" ariaLabelledBy="cancelButtonLabel"/>
+			</Toolbar>
+
+		</customHeader>
+
+<form:SimpleForm id="loginForm">
+<form:content>
+
+
+<Label id="lem" text="Email:" labelFor="lemail"></Label>
+<Input id="lemail" placeholder="Enter You'r Email" required="true" type="Email"></Input>
+
+<Label id="lpass" text="Password:" labelFor="lpassword"></Label>
+<Input id="lpassword" placeholder="Enter You'r Password" required="true" type="Password"></Input>
+</form:content>
+</form:SimpleForm>
+
+<footer>
+<Toolbar id="toolBar">
+<Button id="loginbutton" type="Accept" text="Login"></Button>
+<Button  id="RefreshButton" type="Reject" text="Cancel" ></Button>
+</Toolbar>
+</footer>
+</Dialog>
+
+
+</core:FragmentDefinition>

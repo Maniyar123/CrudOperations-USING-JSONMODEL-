@@ -1,0 +1,130 @@
+/* Enter your custom styles here */
+
+/* -------buttons-------- */
+.regi{
+    width: 260px;
+    position:relative;
+    left:530px;
+    top: 260px;
+
+}
+.tileLayout{
+    background: rgba(230, 20, 51, 0.604);
+}
+.log{
+    width: 260px;
+    position:relative;
+    left:660px;
+    top: 260px;
+    
+}
+/* -------registartion form fragment---------- */
+#regDailog{
+    height:500px;
+    width:30%;
+    
+}
+#registrationTittle{
+    color: rgb(223, 26, 89);;
+}
+#loginTittle{
+    color: rgb(223, 26, 89);
+}
+
+/* icon{
+    position: relative;
+    right:150px;
+} */
+
+/* ----------registation form buttons-------------- */
+#sub{
+    position: relative;
+    left: 70px;
+    width:30%;
+}
+#RefreshButton{
+    position: relative;
+    left: 80px;
+    width:30%;
+}
+
+/* -------registation form input's */
+ #phn{
+    position: relative;
+    left:10px;
+   
+}
+#password{
+    position: relative;
+   
+    left:10px;
+
+}
+#email{
+    position: relative;
+    
+    left:10px;
+    
+}
+#field{
+    position: relative;
+    
+    left:10px;
+}
+#lastName{
+    position:relative;
+    left:10px;
+}
+#fname{
+    position: relative;
+    left:10px;
+}
+
+
+/* registation form label's */
+#phnnum{
+    position: relative;
+    
+    left: 10px;
+    color:#138d1ba9;
+}
+#pass{
+    position: relative;
+    
+    left: 10px;
+    color:#138d1ba9;;
+}
+#em{
+    position: relative;
+    
+    left: 10px;
+    color:#138d1ba9;
+}
+
+
+#fl{
+    position: relative;
+    
+    left: 10px;
+    color:#138d1ba9;
+    
+}
+
+#lname{
+    position: relative;   
+    left: 10px;
+    color:#138d1ba9;
+}
+
+#fn{
+    position: relative;   
+    left: 10px;
+    color:#138d1ba9;
+} 
+
+/* -------login form --------*/
+
+#Dialoglogin{
+    height: 200px;
+    width: 35%;
+}
